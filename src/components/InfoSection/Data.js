@@ -1,17 +1,39 @@
-import car from "../../images/svg-1.svg";
-import piggybank from "../../images/svg-2.svg";
-import signup from "../../images/svg-3.svg";
+import car from "../../videos/product launch_solid II.png";
+import piggybank from "../../videos/developer_outline I.png";
+import services from "../../videos/team_solid III.png";
 
 export const homeObjOne = {
   id: "about",
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: "EXPANSIVE SOLUTIONS",
+  headline: "Harness the Power of a Robust Online Presence",
+  description:
+    "Seamlessly manage your online presence with our comprehensive services. From website development to social media strategies, we've got your digital needs covered.",
+  buttonLabel: "Reach Out to Us",
+  imgStart: true,
+  img: piggybank,
+  alt: "Piggybank",
+  dark: false,
+  primary: false,
+  darkText: true,
+};
+
+
+export const homeObjTwo = {
+  id: "whyus",
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
 
-  topLine: "Premium Bank",
-  headline: "Unlimited Transactions with zero fees",
+  topLine: "AMPLIFYING YOUR DIGITAL JOURNEY.",
+  headline: "Tailored Solutions for Optimal Online Impact.",
   description:
-    "Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees.",
+    "Unlock exclusive digital solutions that include website development, social media management, and more, tailored to maximize your online impact.",
+  li:"We make innovations meet strategies,", 
+  li2: "Designs that transforms into a captivating experiences,",
+  li3: "Every project is a journey of extraordinary possibilities.",
   buttonLabel: "Get started",
   imgStart: false,
   img: car,
@@ -21,36 +43,18 @@ export const homeObjOne = {
   darkText: false,
 };
 
-export const homeObjTwo = {
-  id: "discover",
-  lightBg: true,
-  lightText: false,
-  lightTextDesc: false,
-  topLine: "Unlimited Access",
-  headline: "Login to your account at any time",
-  description:
-    "We have you covered no matter where you are located. All you need is an internet connection and a phone or computer.",
-  buttonLabel: "Learn More",
-  imgStart: true,
-  img: piggybank,
-  alt: "Piggybank",
-  dark: false,
-  primary: false,
-  darkText: true,
-};
-
 export const homeObjThree = {
-  id: "signup",
+  id: "solutions",
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topLine: "Join our Team",
-  headline: "Creating an account is extremely easy",
+  topLine: "Digital Marketing Strategies",
+  headline: "Crafting your brand's success through targeted marketing solutions.",
   description:
-    "Get everything set up and ready in under 10 minutes. All you need to do is add your information and you're ready to go.",
+    "From SEO to PPC, we deploy cutting-edge strategies to enhance your online visibility and drive sustainable growth.",
   buttonLabel: "Start Now",
   imgStart: false,
-  img: signup,
+  img: services,
   alt: "Papers",
   dark: false,
   primary: false,

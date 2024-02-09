@@ -14,7 +14,7 @@ export const Nav = ({ children, scrollNav }) => {
 };
 
 export const NavbarContainer = ({ children }) => (
-  <div className="flex justify-between h-20 z-10 w-full py-0 px-24 max-w-screen-lg">
+  <div className="flex justify-between h-20 z-10 w-full py-0 px-24 sm:px-6 max-w-screen-lg">
     {children}
   </div>
 );

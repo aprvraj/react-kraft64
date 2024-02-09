@@ -33,7 +33,12 @@ function Footer() {
   return (
     <FooterContainer>
       <FooterWrap>
-        <FooterLinksContainer>
+          <h1 className="text-white text-bold text-3xl pb-6">REACH OUT TO US</h1>
+          <div className="flex text-white">
+            <a href="tel:+916358242840" className="pr-4">+91 6358242840</a>
+            <a href="mailto:rajapurv14@gmail.com" className="pl-4">rajapurv14@gmail.com</a>
+          </div>
+        {/* <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>About Us</FooterLinkTitle>
@@ -67,17 +72,17 @@ function Footer() {
               <FooterLink to="/signin">Twitter</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
-        </FooterLinksContainer>
+        </FooterLinksContainer> */}
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo to="/" onClick={toggleHome}>
-              dolla
+              kraft64.com
             </SocialLogo>
             <WebsiteRights>
-              dolla &copy; {new Date().getFullYear()} All Rights Reserved.
+              kraft64 &copy; {new Date().getFullYear()} All Rights Reserved.
             </WebsiteRights>
 
-            <SocialIcons>
+            {/* <SocialIcons>
               <SocialIconLink href="/" target="_blank" aria-label="Facebook">
                 <FaFacebook />
               </SocialIconLink>
@@ -93,7 +98,7 @@ function Footer() {
               <SocialIconLink href="/" target="_blank" aria-label="Linkedin">
                 <FaLinkedin />
               </SocialIconLink>
-            </SocialIcons>
+            </SocialIcons> */}
           </SocialMediaWrap>
         </SocialMedia>
       </FooterWrap>

@@ -21,21 +21,21 @@ function Sidebar({ isOpen, toggle }) {
           <SidebarLink to="about" onClick={toggle}>
             About
           </SidebarLink>
-          <SidebarLink to="discover" onClick={toggle}>
-            Discover
+          <SidebarLink to="whyus" onClick={toggle}>
+            Why Us
+          </SidebarLink>
+          <SidebarLink to="solutions" onClick={toggle}>
+            Solutions
           </SidebarLink>
           <SidebarLink to="services" onClick={toggle}>
-            Services
-          </SidebarLink>
-          <SidebarLink to="signup" onClick={toggle}>
-            Sign Up
+            Our Services
           </SidebarLink>
         </SidebarMenu>
-        <SideBtnWrap>
+        {/* <SideBtnWrap>
           <SidebarRoute to="/signin" onClick={toggle}>
             Sign In
           </SidebarRoute>
-        </SideBtnWrap>
+        </SideBtnWrap> */}
       </SidebarWrapper>
     </SidebarContainer>
   );

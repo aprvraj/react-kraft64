@@ -16,20 +16,17 @@ export const InfoWrapper = ({ children }) => (
 );
 
 export const InfoRow = ({ children, imgStart }) => {
-  const gridAreasXL = imgStart
-    ? "grid-areas-xlimgstart"
-    : "grid-areas-xlimgend";
-  const gridAreasMD = imgStart
-    ? "grid-areas-mdimgstart"
-    : "grid-areas-mdimgend";
+  const gridAreasXL = imgStart ? "grid-areas-xlimgstart" : "grid-areas-xlimgend";
+  const gridAreasMD = imgStart ? "grid-areas-mdimgstart" : "grid-areas-mdimgend";
   return (
     <div
-      className={`grid auto-cols-1fr ${gridAreasXL} md:${gridAreasMD} xsm:flex items-center`}
+      className={`md:flex md:flex-col grid auto-cols-1fr ${gridAreasXL} md:${gridAreasMD} xsm:flex items-center`}
     >
       {children}
     </div>
   );
 };
+
 
 export const Column1 = ({ children }) => (
   <div className="mb-4 py-0 px-4 grid-in-col1 xsm:justify-center xsm:items-center">
@@ -65,7 +62,7 @@ export const Heading = ({ children, lightText }) => {
 export const Subtitle = ({ children, darkText }) => {
   const textColor = darkText ? "text-black" : "text-white";
   return (
-    <p className={`max-w-md mb-9 text-lg leading-6 ${textColor}`}>{children}</p>
+    <p className={`max-w-md mb-3 text-lg leading-6 ${textColor}`}>{children}</p>
   );
 };
 

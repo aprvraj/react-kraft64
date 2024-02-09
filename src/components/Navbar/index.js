@@ -12,6 +12,7 @@ import {
   NavBtn,
   NavBtnLink,
 } from "./NavbarElements";
+import logo from "../../videos/KRAFT64.com.png";
 
 function Navbar({ toggle }) {
   const [scrollNav, setScrollNav] = useState(false);
@@ -46,7 +47,7 @@ function Navbar({ toggle }) {
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <NavLogo to="/" onClick={toggleHome}>
-            dolla
+            <img src={logo} alt="logo" style={{width:"130px"}}/>
           </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
@@ -58,24 +59,24 @@ function Navbar({ toggle }) {
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="discover" {...scrollProps}>
-                Discover
+              <NavLinks to="whyus" {...scrollProps}>
+                Why Us
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="solutions" {...scrollProps}>
+                Solutions
               </NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to="services" {...scrollProps}>
-                Services
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="signup" {...scrollProps}>
-                Sign Up
+                Our Services
               </NavLinks>
             </NavItem>
           </NavMenu>
-          <NavBtn>
+          {/* <NavBtn>
             <NavBtnLink to="/signin">Sign In</NavBtnLink>
-          </NavBtn>
+          </NavBtn> */}
         </NavbarContainer>
       </Nav>
     </>

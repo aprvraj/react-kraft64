@@ -7,11 +7,14 @@ import {
   HeroContent,
   HeroH1,
   HeroP,
+  HeroP1,
   HeroBtnWrapper,
   ArrowForward,
   ArrowRight,
 } from "./HeroElements";
 import { Button } from "../ButtonElements";
+import img from "../../videos/Untitled design.png"
+import logo from "../../videos/KRAFT64.com.png"
 
 import Video from "../../videos/video.mp4";
 
@@ -25,15 +28,18 @@ function HeroSection() {
     <>
       <HeroContainer id="home">
         <HeroBg>
-          <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
+          <img src={img} alt="alt" style={{width:"100vw", height:"100vh", overflow:"hidden"}}/>
+          {/* <VideoBg autoPlay loop muted src={Video} type="video/mp4" /> */}
         </HeroBg>
         <HeroContent>
-          <HeroH1>Virtual Banking Made Easy</HeroH1>
+          <HeroH1>Elevate Your Digital Presence!</HeroH1>
           <HeroP>
-            Sign Up for a new account today and receive $250 in credit towards
-            your next payment.
+          Step into the world of unparalleled digital innovation and marketing excellence with
           </HeroP>
-          <HeroBtnWrapper>
+            <img src={logo} style={{paddingTop:"20px", width:"200px"}}/>
+          <HeroP1>
+          </HeroP1>
+          {/* <HeroBtnWrapper>
             <Button
               to="signup"
               smooth={true}
@@ -48,7 +54,7 @@ function HeroSection() {
             >
               Get started {hover ? <ArrowForward /> : <ArrowRight />}
             </Button>
-          </HeroBtnWrapper>
+          </HeroBtnWrapper> */}
         </HeroContent>
       </HeroContainer>
     </>

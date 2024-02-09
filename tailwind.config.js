@@ -26,7 +26,7 @@ module.exports = {
     gridTemplateAreas: {
       xlimgstart: ["col2 col1"],
       xlimgend: ["col1 col2"],
-      mdimgstart: ["col1", "col2"],
+      mdimgstart: ["col1 col1", "col2 col2"],
       mdimgend: ["col1 col1", "col2 col2"],
     },
   },

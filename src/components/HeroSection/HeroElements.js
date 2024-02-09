@@ -35,6 +35,11 @@ export const HeroP = ({ children }) => (
     {children}
   </p>
 );
+export const HeroP1 = ({ children }) => (
+  <p className="mt-6 text-white text-lg sm:text-xs !text-left max-w-screen-sm">
+    {children}
+  </p>
+);
 
 export const HeroBtnWrapper = ({ children }) => (
   <div className="mt-8 flex flex-col items-center">{children}</div>
